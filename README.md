@@ -18,6 +18,6 @@ cp -rfp ../iaas_sample inventory/iaas
 # Update the `inventory/iaas/group_vars/all/all.yml` and `inventory/iaas/group_vars/k8s_cluster/k8s-cluster.yml` files with your desired configuration.
 
 ssh-add YOUR_SSH_PRIVATE_KEY_PATH
-ansible-playbook -i inventory/iaas/hosts.yml  --become --become-user=root playbooks/reset.yml
-ansible-playbook -i inventory/iaas/hosts.yml  --become --become-user=root playbooks/cluster.yml
+ansible-playbook -i inventory/iaas/hosts.yml  --become --become-user=root reset.yml
+ansible-playbook -i inventory/iaas/hosts.yml  --become --become-user=root cluster.yml
 ```
